@@ -48,7 +48,7 @@ complete_session() {
     
     echo $entry >> $output_file
 }
-echo $triggers
+
 if [ "$state" == "pomodoro" ]; then
     if [ "$triggers" == "complete" ]; then
         complete_session $triggers $duration_in_sec $elapsed_in_sec
